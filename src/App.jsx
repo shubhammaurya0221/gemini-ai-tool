@@ -121,25 +121,29 @@ function App() {
           Hello User, How can I help you
         </h1>
 
-        {loader && (
-          <div role="status" className="text-center p-2">
+       {loader && (
+          <div className="text-center py-6">
             <svg
-              aria-hidden="true"
-              className="inline w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-purple-600"
-              viewBox="0 0 100 101"
-              fill="none"
+              className="animate-spin h-8 w-8 mx-auto text-purple-600"
               xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
             >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              ></circle>
               <path
-                d="M100 50.5908C100 78.2051 77.6142 100.591..."
+                className="opacity-75"
                 fill="currentColor"
-              />
-              <path
-                d="M93.9676 39.0409C96.393 38.4038 97.8624..."
-                fill="currentFill"
-              />
+                d="M4 12a8 8 0 018-8v8H4z"
+              ></path>
             </svg>
-            <span className="sr-only">Loading...</span>
+            <p className="mt-2 text-sm text-gray-400">Thinking...</p>
           </div>
         )}
 
